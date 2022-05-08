@@ -5,7 +5,7 @@ import {WriterWrapper} from '../style';
 class Writer extends PureComponent {
   render() {
     return (
-      <WriterWrapper></WriterWrapper>
+      <WriterWrapper>Pending</WriterWrapper>
     )
   }
 }

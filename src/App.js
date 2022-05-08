@@ -8,6 +8,7 @@ import Detail from './pages/detail';
 import store from './store';
 import {Provider} from 'react-redux';
 import Login from './pages/login';
+import Write from './pages/write';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path='/' exact element={<Home/>}></Route>
               <Route path='/detail/:id' exact element={<Detail/>}></Route>
               <Route path='/login' exact element={<Login/>}></Route>
+              <Route path='/write' exact element={<Write/>}></Route>
             </Routes>
             </BrowserRouter>
       

@@ -5,7 +5,8 @@ import { HeaderWrapper, Logo, Nav, NavItem, NavSearch,
 import {CSSTransition} from 'react-transition-group';
 import {connect} from 'react-redux';
 import {actionCreators}  from './store';
-import { render } from "@testing-library/react";
+import {actionCreators as loginActionCreators} from "../../pages/login/store";
+
 import {Link} from 'react-router-dom';
 
 
@@ -51,7 +52,7 @@ class Header extends Component {
 
 
   render() {
-    const{focused, handleInputBlur, handleInputFocus, list} = this.props;
+    const{focused, handleInputBlur, handleInputFocus, list, login, logout} = this.props;
     return (
       <HeaderWrapper>
       <Link to='/'>
@@ -60,7 +61,12 @@ class Header extends Component {
     <Nav> 
       <NavItem className='left active'>Home Page</NavItem>
       <NavItem className='left'>Download App</NavItem>
-      <NavItem className='right'>Sign in</NavItem>
+      {
+        login ? 
+        <NavItem onClick={logout} className='right'>Sign out</NavItem> :  
+        <Link to='/login'><NavItem className='right'>Sign in</NavItem></Link>
+      }
+     
       <NavItem className='right'>
       <i className="iconfont">&#xe636;</i>
       </NavItem>
@@ -81,15 +87,13 @@ class Header extends Component {
       </SearchWrapper>
     </Nav>
     <Addition>
-      <Button className='reg'>Sign Up</Button>
+    <Link to='/write'>
       <Button className='writting'>
       <i className='iconfont'>&#xe602;</i>
-      Write Something
+      Post an Article
       </Button>
-      
-     
-
-
+      </Link>
+      <Button className='reg'>Sign Up</Button>
     </Addition>
   </HeaderWrapper>
     )
@@ -106,7 +110,8 @@ const mapStateToProps = (state) => {
     list: state.getIn(['header', 'list']),
     page: state.getIn(['header', 'page']),
     mouseIn: state.getIn(['header', 'mouseIn']),
-    totalPage: state.getIn(['header', 'totalPage'])
+    totalPage: state.getIn(['header', 'totalPage']),
+    login: state.getIn(['login', 'login'])
 
   }
 }
@@ -130,6 +135,9 @@ const mapDispatchToProps = (dispatch) => {
       if (page < totalPage) dispatch(actionCreators.pageChange(page+ 1))
       else dispatch(actionCreators.pageChange(1));
       
+    },
+    logout() {
+      dispatch(loginActionCreators.logout());
     }
 
 
