@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "data": {
+      "topicList": [
+          {
+              "id": 1,
+              "title": "Social News",
+              "imgUrl": "//upload.jianshu.io/admin_banners/web_images/4619/667c4f9446720ed3a12690580eb534cef8b58192.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"
+          },
+          {
+              "id": 2,
+              "title": "Drawing",
+              "imgUrl": "https://htdraw.com/wp-content/uploads/2021/04/Cute-girl-face-drawing-Step-by-Step-How-to-draw-a-Girl-Easy.jpg"
+          }
+      ],
+      "articleList": [
+          {
+              "id": 1,
+              "title": "The White House Treats the Public Like Morons. Again.",
+              "desc": "White House flogged the New York Times today for its Wednesday report that was headlined “U.S. Intelligence Is Helping Ukraine Kill Russian Generals, Officials Say...",
+              "imgUrl": "https://www.politico.com/dims4/default/96fbea3/2147483647/strip/true/crop/1160x773+0+0/resize/630x420!/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2Fe5%2F9f%2Fad539c9b4898a30e8eb88a89fe36%2F20211025-john-kirby-pentagon-ap-773.jpg"
+          },
+          {
+              "id": 2,
+              "title": "How the Supreme Court went from cementing abortion rights in Roe v. Wade to drafting their demise…",
+              "desc": "Federal protections for abortion rights have withstood legal challenges for nearly half a century. But a Supreme Court draft opinion, revealed this week in an ...",
+              "imgUrl": "https://image.cnbcfm.com/api/v1/image/107056850-16517782182022-05-05t190944z_878014149_rc2y0u9jf0yz_rtrmadp_0_usa-abortion-court-history.jpeg?v=1651778275&w=740&h=416&ffmt=webp"
+          }
+      ],
+      "recommendList": [
+       
+          {
+              "id": 2,
+              "imgUrl": "https://uipath.com/cdn-cgi/image/format=auto/https:////images.ctfassets.net/5965pury2lcm/51moPQFN9BozBRbZFMcwm3/1065167f563d1062125d6b1d11688c88/autodesk-logo-primary-rgb-black-large.png"
+          },
+          {
+              "id": 3,
+              "imgUrl": "https://columbinecares.com/wp-content/uploads/2019/05/Entheos-Logo-Very-Large-CMYK.jpg"
+          },
+          {
+              "id": 4,
+              "imgUrl": "https://www.mercerdesign.com/wp-content/uploads/2016/06/FedEx-logo-big.jpg"
+          }
+          
+      ]
+  }
+}
