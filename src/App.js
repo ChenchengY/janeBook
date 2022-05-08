@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Header from "./common/header";
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, HashRouter, Route, Routes} from 'react-router-dom';
 import { Globalstyle } from "./style";
 import Home from './pages/home';
 import Detail from './pages/detail';
@@ -18,7 +18,7 @@ function App() {
       
       {/* <GlobalstyleFont /> */}
       
-          <BrowserRouter>
+          <HashRouter basename="/">
           <Header />
             <Routes>
               <Route path='/' exact element={<Home/>}></Route>
@@ -26,7 +26,7 @@ function App() {
               <Route path='/login' exact element={<Login/>}></Route>
               <Route path='/write' exact element={<Write/>}></Route>
             </Routes>
-            </BrowserRouter>
+            </HashRouter>
       
       </Provider>
     </Fragment>
