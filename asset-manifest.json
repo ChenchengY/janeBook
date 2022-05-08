@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/janeBook/static/css/main.1a778b37.css",
+    "main.js": "/janeBook/static/js/main.aa4f3daf.js",
+    "static/media/logo.jpg": "/janeBook/static/media/logo.1ad5cbd23a97a5ddb86e.jpg",
+    "static/media/iconfont.ttf?t=1651810376945": "/janeBook/static/media/iconfont.df6971fc2a55265f5554.ttf",
+    "static/media/iconfont.woff?t=1651810376945": "/janeBook/static/media/iconfont.7828f693f38f003aa7d4.woff",
+    "static/media/iconfont.woff2?t=1651810376945": "/janeBook/static/media/iconfont.700012c2316300b7efdf.woff2",
+    "index.html": "/janeBook/index.html",
+    "main.1a778b37.css.map": "/janeBook/static/css/main.1a778b37.css.map",
+    "main.aa4f3daf.js.map": "/janeBook/static/js/main.aa4f3daf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a778b37.css",
+    "static/js/main.aa4f3daf.js"
+  ]
+}
